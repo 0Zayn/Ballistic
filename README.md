@@ -6,5 +6,5 @@ Please feel free to do whatever with this, just not distribute it as your own pr
 - Zayn, and Ethan
 
 Contributors:
-Entity (Entitynt)
-Joe (JoeIsGod)
+- Entity (Entitynt)
+- Joe (JoeIsGod)
