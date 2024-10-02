@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{88A29C1D-A90C-4409-933D-B391E85A07BB}</ProjectGuid>
+    <RootNamespace>Ballistic_Overlay</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Intermediates\</IntDir>
+    <TargetName>$(RootNamespace)</TargetName>
+    <IncludePath>$(ProjectDir)Dependencies\curl\include\;$(ProjectDir)Dependencies\cpr\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Intermediates\</IntDir>
+    <TargetName>$(RootNamespace)</TargetName>
+    <IncludePath>$(ProjectDir)Dependencies\curl\include\;$(ProjectDir)Dependencies\cpr\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Intermediates\</IntDir>
+    <TargetName>$(RootNamespace)</TargetName>
+    <IncludePath>$(ProjectDir)Dependencies\curl\include\;$(ProjectDir)Dependencies\cpr\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Build\</OutDir>
+    <IntDir>$(ProjectDir)Intermediates\</IntDir>
+    <TargetName>$(RootNamespace)</TargetName>
+    <IncludePath>$(ProjectDir)Dependencies\curl\include\;$(ProjectDir)Dependencies\cpr\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\;$(ProjectDir)Source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\curl\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\;$(ProjectDir)Source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\curl\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\;$(ProjectDir)Source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\curl\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINSOCKAPI_;_CRT_SECURE_NO_WARNINGS;NDEBUG;DLL3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\;$(ProjectDir)Source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\curl\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;d3d11.lib;Ws2_32.lib;Wldap32.lib;Normaliz.lib;Crypt32.lib;libcurl_release.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\cpr\src\auth.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\cookies.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\cprtypes.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\digest.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\error.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\multipart.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\parameters.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\payload.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\proxies.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\session.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\ssl_options.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\timeout.cpp" />
+    <ClCompile Include="Dependencies\cpr\src\util.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\imgui\TextEditor.cpp" />
+    <ClCompile Include="Source\ActionLogger\ActionLogger.cpp" />
+    <ClCompile Include="Source\Communication\Communication.cpp" />
+    <ClCompile Include="Source\EntryPoint\EntryPoint.cpp" />
+    <ClCompile Include="Source\OverlayHook\OverlayHook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\cpr\include\cpr\api.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\auth.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\body.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\cookies.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\cpr.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\cprtypes.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\curlholder.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\defines.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\digest.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\error.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\HttpStatus.hpp" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\low_speed.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\max_redirects.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\multipart.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\parameters.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\payload.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\proxies.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\response.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\session.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\ssl_options.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\timeout.h" />
+    <ClInclude Include="Dependencies\cpr\include\cpr\util.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\curl.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\curlver.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\easy.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\header.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\mprintf.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\multi.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\options.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\stdcheaders.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\system.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\urlapi.h" />
+    <ClInclude Include="Dependencies\curl\include\curl\websockets.h" />
+    <ClInclude Include="Dependencies\HttpStatus\HttpStatus.hpp" />
+    <ClInclude Include="Dependencies\imgui\imconfig.h" />
+    <ClInclude Include="Dependencies\imgui\imgui.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\imgui\TextEditor.h" />
+    <ClInclude Include="Dependencies\nlohmann\nlohmann.hpp" />
+    <ClInclude Include="Dependencies\xorstr\xorstr.hpp" />
+    <ClInclude Include="Source\ActionLogger\ActionLogger.hpp" />
+    <ClInclude Include="Source\Communication\Communication.hpp" />
+    <ClInclude Include="Source\Configuration.hpp" />
+    <ClInclude Include="Source\EntryPoint\EntryPoint.hpp" />
+    <ClInclude Include="Source\Globals.hpp" />
+    <ClInclude Include="Source\OverlayHook\OverlayHook.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
