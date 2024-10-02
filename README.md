@@ -8,3 +8,5 @@ Please feel free to do whatever with this, just not distribute it as your own pr
 Contributors:
 - Entity (Entitynt)
 - Joe (JoeIsGod)
+
+(NOTE: THIS PROJECT HAS A LICENSE)
