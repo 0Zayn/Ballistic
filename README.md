@@ -4,3 +4,7 @@ Due to all this I have decided to leak the source to hopefully put a stop, and b
 Please feel free to do whatever with this, just not distribute it as your own product
 
 - Zayn, and Ethan
+
+Contributor:
+Entity (Entitynt)
+Joe (JoeIsGod)
